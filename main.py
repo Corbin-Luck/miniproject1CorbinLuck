@@ -37,6 +37,7 @@ for stock in mystocks:
     plt.axis((0, 10, highlow[0] - 5, highlow[-1] + 5))
     plt.title('Closing Price for ' + stock)
     plt.savefig(f'charts/{stock}.png')
-    plt.show()
+    print(f'Saving {stck}.png to charts folder')
 
+print('All done')
 
