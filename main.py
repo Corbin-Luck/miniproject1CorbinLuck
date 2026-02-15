@@ -12,7 +12,12 @@ import yfinance as yf
 import numpy as np
 import matplotlib.pyplot as plt
 import copy
-import pprint
+from pathlib import Path
+
+# Creates the charts folder if one does not exist
+charts = Path('charts')
+if not charts.exists():
+    Path(r'charts').mkdir()
 
 ## List of the stocks wanting to find closing price of
 mystocks = ["MSFT", "NVDA", "AAPL", "WMT", "AMC"]
